@@ -1,14 +1,16 @@
 require_relative 'config/environment'
 
 class App < Sinatra::Base
-  get '/' do 
-    "Hello, World!"
+get '/name' do
+    "My name is Shayan"
   end
-  
-get '/names' do
-  @name = name.all
-  
-erb :'names/index.html.erb'
-end
+
+  get '/hometown' do
+    "My hometown is New York City"
+  end
+
+  get '/favorite-song' do
+    "My favorite song is 'Hello World'"
+  end
 
 end
