@@ -8,4 +8,5 @@ class App < Sinatra::Base
 get '/name' do
   @name = name.all
 end
+
 end
