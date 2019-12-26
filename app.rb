@@ -5,8 +5,10 @@ class App < Sinatra::Base
     "Hello, World!"
   end
   
-get '/name' do
+get '/names' do
   @name = name.all
+  
+erb :'names/index.html.erb'
 end
-erb :'name/index.html.erb'
+
 end
